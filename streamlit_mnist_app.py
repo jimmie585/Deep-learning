@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model  # Ensure you have the correct mo
 import matplotlib.pyplot as plt
 
 # Load your trained model
-model = load_model("C:\\Users\\ADMIN\\Downloads\\mnist_ann_model.keras")  # Adjust the path as necessary
+model = load_model("C:\\Users\\ADMIN\\Downloads\\mnist_ann_model.keras")  
 
 
 
@@ -45,3 +45,4 @@ if canvas_result.image_data is not None:
         st.success(f"✅ Predicted Digit: **{pred_digit}**")
         st.subheader("📊 Prediction Probabilities")
         st.bar_chart(pred[0])
+
