@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import numpy as np
 import cv2
-from tensorflow.keras.models import load_model  # Ensure you have the correct model path
+from tensorflow.keras.models import load_model  
 import matplotlib.pyplot as plt
 
 # Load your trained model
@@ -45,4 +45,5 @@ if canvas_result.image_data is not None:
         st.success(f"✅ Predicted Digit: **{pred_digit}**")
         st.subheader("📊 Prediction Probabilities")
         st.bar_chart(pred[0])
+
 
